@@ -8,7 +8,7 @@ import java.util.List;
 
 @Service
 public class QuestionDao implements Questionable{
-    private QuestionProcessor questionProcessor;
+    private final QuestionProcessor questionProcessor;
 
     public QuestionDao(QuestionProcessor questionProcessor) {
         this.questionProcessor = questionProcessor;
